@@ -1,0 +1,218 @@
+
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+ body{
+  background-color: rgb(214, 152, 152) !important;
+  }
+
+.services2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+   padding: 20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+
+}
+
+.service-card2 {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(30% - 20px); /* Adjust the width based on the number of cards */
+  margin: 10px;
+}
+
+/* Media query for screens with a width of 768px or less */
+@media (max-width: 768px) {
+  .services2 {
+      flex-direction: column;
+  }
+
+  .service-card2 {
+      width: 100%;
+  }
+}
+
+.service-card2 img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.service-card2 h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.service-card2 p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.service-card2 a {
+  display: inline-block;
+  background-color: #ff5e62;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Additional styles for smaller screens, you can customize these as needed */
+@media (max-width: 480px) {
+  .service-card2 h3 {
+      font-size: 1.2rem;
+  }
+
+  .service-card2 p {
+      font-size: 0.9rem;
+  }
+}
+
+
+.w{
+  color: white;
+   align-items: center;
+   justify-content: center;
+  display: flex;
+}
+
+.js{
+  color: white;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+
+
+.btn-primary {
+  background-color: #ff5e62 !important;
+  border-color: #c05858 !important;
+  border-radius: 25px !important; /* Add rounded corners */
+  padding: 10px 20px !important; /* Adjust padding as needed */
+  text-decoration: none;
+  color: #fff !important; /* Text color on hover */
+
+  
+}
+
+/* Change the button's appearance on hover */
+.btn-primary:hover {
+  background-color: #eec7c7 !important;
+  border-color: #000000 !important;
+  color: #000000 !important; /* Text color on hover */
+}
+
+/* Center-align the text within the button */
+.btn-primary a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.business-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+    
+}
+.left-section {
+  flex: 1;
+  margin-right: 20px;
+}
+.right-section {
+  flex: 1;
+  padding-left: 50px;
+}
+/* Business name and address */
+.business-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.business-address {
+  font-style: italic;
+}
+/* Business hours table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icon,.social-icon-fb,.social-icon-insta,.social-icon-u {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon-fb:hover {
+  color: rgb(90, 172, 255);
+}
+
+.social-icon-insta:hover{
+  color: rgb(252, 93, 93);
+}
+
+.social-icon-u:hover{
+color: #ff2d11;
+}
+
+
+/* Copyright */
+.copyrights {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyright hr {
+  border: none;
+  border-top: 2px solid #333;
+}
+
+.copyright p {
+  color: #000000;
+  font-size: 14px;
+}

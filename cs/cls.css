@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f4b0b0;
+    background-color: #f3e4b0 !important;
+}
+
+.w {
+    color: black;
+}
+
+.line {
+    border: 0;
+    height: 1px;
+     margin: 20px 0;
+}
+
+.clr {
+    color: #000000;
+    padding: 1em;
+    
+
+}
+
+.d {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h1 {
+    color: #000000;
+}
+
+p {
+    line-height: 1.6;
+    color: #868484;
+}
+
+.contactcs {
+    margin-top: 10px;
+}
+
+ 
+#opening-hours {
+    color: #333;
+    font-weight: bold;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp green color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+   
+}
+
+.whatsapp-button:hover {
+    background-color: #cdffdf; /* Darker shade of WhatsApp green on hover */
+    text-decoration: none;
+    color: black;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .d {
+        padding: 10px;
+    }
+    
+    .jh {
+        margin-right: 2%; /* Adjusted for smaller screens */
+    }
+}
+
+.business-card {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+      
+}
+.left-section {
+    flex: 1;
+    margin-right: 20px;
+}
+.right-section {
+    flex: 1;
+    padding-left: 50px;
+}
+/* Business name and address */
+.business-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+.business-address {
+    font-style: italic;
+}
+/* Business hours table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon,.social-icon-fb,.social-icon-insta,.social-icon-u {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icon-fb:hover {
+    color: rgb(90, 172, 255);
+  }
+
+  .social-icon-insta:hover{
+    color: rgb(252, 93, 93);
+  }
+
+.social-icon-u:hover{
+  color: #ff2d11;
+}
+
+  
+  /* Copyright */
+  .copyrights {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .copyright hr {
+    border: none;
+    border-top: 2px solid #333;
+  }
+  
+  .copyright p {
+    color: #000000;
+    font-size: 14px;
+  }

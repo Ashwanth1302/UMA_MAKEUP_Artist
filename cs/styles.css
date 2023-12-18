@@ -1,0 +1,830 @@
+    
+    @import url("https://fonts.googleapis.com/css?family=Lato:700");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif; 
+      box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+    
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    }
+
+    .navigation{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       
+    }
+      nav {
+        float: right;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        float: left;
+        position: relative;
+      }
+      nav ul li a {
+        display: block;
+        padding: 0 20px;
+        line-height: 70px;
+        background: #ffffff;
+        color: #000000;
+        text-decoration: none;
+        /*
+        The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
+        */
+      }
+      nav ul li a:hover {
+        background: #ffffff;
+        color: #fb5958;
+      }
+      nav ul li a:not(:only-child):after {
+        padding-left: 4px;
+        content: ' ▾';
+      }
+      nav ul li ul li {
+        min-width: 190px;
+      }
+      nav ul li ul li a {
+        padding: 15px;
+        line-height: 20px;
+      }
+      
+      .nav-dropdown {
+        position: absolute;
+        z-index: 1;
+        /* Guarantees that the dropdown will display on top of any content. */
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+        display: none;
+      }
+      
+      .nav-mobile {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fff;
+        height: 70px;
+        width: 70px;
+      }
+      
+      @media only screen and (max-width: 800px) {
+        .nav-mobile {
+          display: block;
+        }
+      
+        nav {
+          width: 100%;
+          padding: 70px 0 15px;
+        }
+        nav ul {
+          display: none;
+        }
+        nav ul li {
+          float: none;
+        }
+        nav ul li a {
+          padding: 15px;
+          line-height: 20px;
+        }
+        nav ul li ul li a {
+          padding-left: 30px;
+        }
+      }
+      #nav-  {
+        position: absolute;
+        left: 18px;
+        top: 22px;
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+      }
+      #nav-toggle span,
+      #nav-toggle span:before,
+      #nav-toggle span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: #463f3f;
+        position: absolute;
+        display: block;
+        content: '';
+        transition: all 300ms ease-in-out;
+      }
+      #nav-toggle span:before {
+        top: -10px;
+      }
+      #nav-toggle span:after {
+        bottom: -10px;
+      }
+      #nav-toggle.active span {
+        background-color: transparent;
+      }
+      #nav-toggle.active span:before, #nav-toggle.active span:after {
+        top: 0;
+      }
+      #nav-toggle.active span:before {
+        transform: rotate(45deg);
+      }
+      #nav-toggle.active span:after {
+        transform: rotate(-45deg);
+      }
+      
+      @media screen and (min-width: 800px) {
+        .nav-list {
+          display: block !important;
+        }
+      }
+      /* 
+      .navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
+      */
+      .navigation {
+        height: 70px;
+        background: #ffffff;
+      }
+      
+      /*
+      .nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
+      */
+      .nav-container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      .brand {
+        position: absolute;
+        padding-left: 20px;
+        float: left;
+        line-height: 70px;
+        text-transform: uppercase;
+        font-size: 1.4em;
+      }
+      .brand a,
+      .brand a:visited {
+        color: #463f3f;
+        text-decoration: none;
+      }
+      
+
+     
+    
+
+    header .carousel-inner .item {
+      height: 100vh;
+    }
+    .navbar-inverse {
+      background-color: transparent;
+      border-color: transparent;
+    }
+    .navbar-inverse .navbar-brand {
+      color: #fff;
+      font-size: 40px;
+      padding: 40px 15px;
+      font-weight: 900;
+    }
+    .nav.navbar-nav.navbar-right {
+      margin: 25px 0;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: #000000;
+      text-transform: uppercase;
+    }
+    .banner {
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 100vh;
+       
+    }
+    .carousel-caption {
+      padding-bottom: 250px;
+      font-family: poppins;
+    }
+    .carousel-caption h2 {
+      font-size: 70px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .carousel-caption h2 span {
+      color: #EDBB00;
+    }
+    .carousel-caption a {
+      background: #EDBB00;
+      padding: 15px 35px;
+      display: inline-block;
+      margin-top: 15px;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 25px;
+    }
+    .carousel-control.right {
+      background-image: none;
+    }
+    .carousel-control.left {
+      background-image: none;
+    }
+    .carousel-indicators .active {
+      background-color: #EDBB00;
+      border-color: #EDBB00;
+    }
+
+/* Style the "Contact Us" button */
+.contact-button {
+  background-color: #EDBB00;
+  padding: 15px 35px;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Add a hover effect to the "Contact Us" button */
+.contact-button:hover {
+  background-color: #161611;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+    /*responsive css*/
+
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .carousel-caption {
+        padding-bottom: 350px;
+      }
+      .carousel-caption h2 {
+        font-size: 50px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .navbar-inverse .navbar-brand {
+        font-size: 30px;
+        padding: 20px 15px;
+      }
+      .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .carousel-caption {
+        padding-bottom: 120px;
+      }
+      .carousel-caption h2 {
+        font-size: 25px;
+      }
+      .carousel-caption h3 {
+        font-size: 18px;
+      }
+      .carousel-caption a {
+        padding: 10px 25px;
+      }
+    }
+
+    .py-5{
+      font-size: 2.0rem;
+    }
+
+ 
+
+    .book{
+        color: rgb(103, 102, 102);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+    .btn-primary {
+        background-color: #c05858 !important;
+        border-color: #c05858 !important;
+        border-radius: 25px !important; /* Add rounded corners */
+        padding: 10px 20px !important; /* Adjust padding as needed */
+    }
+
+    /* Change the button's appearance on hover */
+    .btn-primary:hover {
+        background-color: #000000 !important;
+        border-color: #000000 !important;
+        color: #fff !important; /* Text color on hover */
+    }
+
+    /* Center-align the text within the button */
+    .btn-primary a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    /*aboout*/
+/* Add the styles for the 'about' section */
+/* Existing styles for .about and .about-content */
+.about {
+  background-color: #ffb1b1;
+  color: #000000;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-content {
+  font-family: "Montserrat", sans-serif;
+}
+
+.about h2 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.about-content p.ys {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.about-photo {
+  width: 80%;
+  transition: transform 0.2s ease-out;
+  border-top: 10px solid #fdfeff; /* Add a border to the top side */
+  border-right: 10px solid #ffffff; /* Add a border to the right side */
+  border-radius: 0px; /* Rounded corners for the frame */
+  padding: 10px;
+}
+
+.about-photo:hover {
+   
+  border-radius: 0px;
+}*
+
+/* New styles for .about-me and related elements */
+.about-me {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.about-me-container {
+  position: relative;
+}
+
+.about-me-title {
+  font-size: 55px;
+  color: #87A4B6;
+  font-weight: 700;
+}
+
+.about-me-flex-container {
+  margin-top: -25px;
+  margin-left: 150px;
+  left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-flex-container .about-me-image {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.about-me-flex-container .about-me-image .back-div {
+  position: absolute;
+  bottom: 0;
+  z-index: -3;
+  background-color: #013747;
+  width: 80%;
+  height: 80%;
+}
+
+.about-me-flex-container .about-me-image .black-image {
+  z-index: -2;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  height: 100%;
+}
+
+.about-me-flex-container .about-me-image .black-image img {
+  height: 100%;
+}
+
+.about-me-flex-container .about-me-image .main-image {
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+  left: 25%;
+  top: 5%;
+  box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
+  transition: all 0.2s ease-out;
+}
+
+.about-me-flex-container .about-me-image .main-image:hover {
+  transform-origin: top center;
+  transform: scale(1.5);
+  border-radius: 25px;
+}
+
+.about-me-flex-container .about-me-image .main-image img {
+  transform-origin: center center;
+  transform: scale(2);
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all 0.2s ease-out;
+}
+
+.about-me-flex-container .about-me-image .main-image img:hover {
+  transform: scale(1);
+}
+
+.about-me-flex-container .about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex: 0 0 40%;
+}
+
+.about-me-flex-container .about-me-content .logo img {
+  filter: drop-shadow(0 0 25px rgb(255, 251, 251));
+}
+
+@media (max-width: 960px) {
+  .about-me-flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    gap: 50px;
+  }
+  .about-me-flex-container .about-me-content {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-me .about-me-title {
+    font-size: 30px;
+  }
+  .about-me-flex-container {
+    margin-top: -10px;
+  }
+  .about-me-flex-container .about-me-image {
+    width: 300px;
+    height: 300px;
+  }
+  .about-me-flex-container .about-me-content .logo img {
+    transform: rotateZ(90deg);
+  }
+  .about-me-flex-container .about-me-content .text {
+    font-size: 16px;
+  }
+}
+
+
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:50px;
+    text-align:center;
+    color:black;
+    padding:1%;
+    margin-top: 100px;
+  }
+  #gallery{
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+    
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+  }
+  @media (max-width:1200px){
+    #gallery{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+      
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+  }
+  }
+  @media (max-width:800px){
+    #gallery{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+      
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+  }
+  }
+  @media (max-width:600px){
+    #gallery{
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+  }  
+  }
+  #gallery img,#gallery video {
+    width:100%;
+    height:auto;
+    margin: 4% auto;
+    box-shadow:-3px 5px 15px #000;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .modal-img,.model-vid{
+    width:100%;
+    height:auto;
+  }
+  .modal-body{
+    padding:0px;
+  }
+
+
+.fl{
+  font-size: 1.2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+  .insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Style for the Instagram link */
+.insta a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #ff2d11;
+    font-weight: 700;
+    vertical-align: top;
+    font-size: 18px;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .insta a::before,
+  .insta a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  
+  .insta a::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .insta a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+  
+  .insta a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  
+  .insta a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .insta a span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .insta a:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+
+
+  .insta{
+    color: #000;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+  }
+  
+
+  .reviews {
+    background-color: #ffffff; /* Set your desired background color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    margin-top: 50px;/* Add rounded corners for a box effect */
+  } 
+  
+  /* Style for the reviews heading */
+  .gle {
+    font-size: 24px;
+    margin-bottom: 20px; /* Adjust as needed */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  /*card css*/
+
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.service-card {
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.2s;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.service-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    color: goldenrod;
+}
+
+.service-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.service-description {
+    font-size: 16px;
+}
+
+.contactcs {
+  margin-top: 10px;
+}
+
+
+#opening-hours {
+  color: #333;
+  font-weight: bold;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25D366; /* WhatsApp green color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+ 
+}
+
+.whatsapp-button:hover {
+  background-color: #cdffdf; /* Darker shade of WhatsApp green on hover */
+  text-decoration: none;
+  color: black;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .d {
+      padding: 10px;
+  }
+  
+  .jh {
+      margin-right: 2%; /* Adjusted for smaller screens */
+  }
+}
+
+.ws{
+  background-color: rgb(191, 190, 190);
+}
+
+
+.business-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+    
+}
+.left-section {
+  flex: 1;
+  margin-right: 20px;
+}
+.right-section {
+  flex: 1;
+  padding-left: 50px;
+}
+/* Business name and address */
+.business-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.business-address {
+  font-style: italic;
+}
+/* Business hours table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icon,.social-icon-fb,.social-icon-insta,.social-icon-u {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon-fb:hover {
+  color: rgb(90, 172, 255);
+}
+
+.social-icon-insta:hover{
+  color: rgb(252, 93, 93);
+}
+
+.social-icon-u:hover{
+color: #ff2d11;
+}
+
+
+/* Copyright */
+.copyrights {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyright hr {
+  border: none;
+  border-top: 2px solid #333;
+}
+
+.copyright p {
+  color: #000000;
+  font-size: 14px;
+}
