@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cute Touch beauty parlour</title>
+      <link rel="shortcut icon" href="images/Cute Touch-logos_black.png" type="image/x-icon">
+      
+      <link rel="stylesheet" href="cs/styles.css"> <!-- Ensure your custom stylesheet is linked after Bootstrap -->
+      <link rel="stylesheet" href="cs/br.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+        
+      
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="#!">
+                        <img src="images/Cute Touch-logos_black.png" alt="logo" width="5%">
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!"><span></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <!-- Setting the links to #! will ensure that no action takes place on click. -->
+                        <li><a href="index.html">Home</a></li>
+                     <!--- <li><a href="#!">About</a></li>-->
+                        <li><a href="#!">Services</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="saloon-service.html">Saloon Service</a></li>
+                                <li><a href="br.html">Bridal Packages</a></li>
+                                <li><a href="cls.html">Professional courses</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ach.html">Achievements</a></li>
+                        <li><a href="#!" onclick="scrollToContact()">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+       
+        <div class="demo10" style="background-image: url('images/Cute Touch Makeover.png'); padding: 30px 0;">
+
+            <div class="container">
+                <h4 class="py-4 text-center">Pricing Table</h4>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Standard</h3>
+                                <span class="price-value">
+                                    <span class="currency">$</span> 10
+                                    <span class="month">/mo</span>
+                                </span>
+                            </div>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>50GB Disk Space</li>
+                                    <li>50 Email Accounts</li>
+                                    <li>50GB Monthly Bandwidth</li>
+                                    <li>10 Subdomains</li>
+                                    <li>15 Domains</li>
+                                </ul>
+                                <a href="#" class="read">sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Business</h3>
+                                <span class="price-value">
+                                    <span class="currency">$</span> 20
+                                    <span class="month">/mo</span>
+                                </span>
+                            </div>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>60GB Disk Space</li>
+                                    <li>60 Email Accounts</li>
+                                    <li>60GB Monthly Bandwidth</li>
+                                    <li>15 Subdomains</li>
+                                    <li>20 Domains</li>
+                                </ul>
+                                <a href="#" class="read">sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Premium</h3>
+                                <span class="price-value">
+                                    <span class="currency">$</span> 30
+                                    <span class="month">/mo</span>
+                                </span>
+                            </div>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>70GB Disk Space</li>
+                                    <li>70 Email Accounts</li>
+                                    <li>70GB Monthly Bandwidth</li>
+                                    <li>20 Subdomains</li>
+                                    <li>25 Domains</li>
+                                </ul>
+                                <a href="#" class="read">sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Extra</h3>
+                                <span class="price-value">
+                                    <span class="currency">$</span> 40
+                                    <span class="month">/mo</span>
+                                </span>
+                            </div>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>80GB Disk Space</li>
+                                    <li>80 Email Accounts</li>
+                                    <li>80GB Monthly Bandwidth</li>
+                                    <li>25 Subdomains</li>
+                                    <li>30 Domains</li>
+                                </ul>
+                                <a href="#" class="read">sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="reviews">
+        <h3 class="gle">
+        REVIEWS
+        </h3>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-f2e09e01-eb32-4573-bdae-b0465f173d20"></div></section>
+      
+      </section>
+
+      <footer class="wq" id="contact">
+ 
+        <h1>Contact Us</h1>
+    
+    
+    <div class="business-card">
+        <div class="left-section">
+            <div class="business-name">CuteTouch Makeup Studio & Academy</div>
+            <div class="business-address">7, 4, 1st Main Rd, S. V. S Nagar, Valasaravakkam, <br> Chennai, Tamil Nadu-600087</div>
+            <div class="business-num">9962653726</div>
+            <div class="business-mail">ashwanthram14@gmail.com</div>
+        </div>
+        <div class="right-section">
+            <div class="opening-hours" id="opening-hours">
+                <!-- Opening hours will be dynamically updated here -->
+            </div>
+        </div>
+    </div>
+    
+           
+        </div>
+        <div class="social-icon">
+            <a href="https://www.facebook.com/yourfacebookpage" class="social-icon-fb">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/yourinstagrampage" class="social-icon-insta">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/youryoutubepage" class="social-icon-u">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div> 
+          <div class="copyrights">
+            <hr class="custom-hr" style="border: none; border-top: 2px solid #333;">
+            <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+          </div> 
+     
+      </footer>
+            
+
+
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+<script>
+    const currentDay = new Date().getDay();
+      const openingHours = [
+          "Sunday: 9:00 AM to 9:00 PM",
+          "Monday: 9:00 AM to 9:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 9:00 AM to 9:00 PM",
+          "Thursday: 9:00 AM to 9:00 PM",
+          "Friday: 9:00 AM to 9:00 PM",
+          "Saturday: 9:00 AM to 9:00 PM"
+      ];
+      document.getElementById("opening-hours").innerText = `Today's Opening Hours: ${openingHours[currentDay]}`;
+    </script>
+ 
+</body>
+</html>         

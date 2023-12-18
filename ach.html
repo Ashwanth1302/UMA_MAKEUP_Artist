@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Touch beauty parlour</title>
+    <link rel="shortcut icon" href="images/Cute Touch-logos_black.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="cs/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+      
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xrEFVH1zlTVoj9H0oMwoWlM6pbVr5zOMZUYB5t9zByqO9KAG9j2P4Tgyd9goJ+7FfZ5unFhRMk4vTR9e3+IL4g==" crossorigin="anonymous" />
+    <style>
+ body{
+    background-color: darksalmon;
+ }
+
+
+        .certificate-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .certificate-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .certificate {
+            width: 250px;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .certificate img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .certificate p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!">
+                    <img src="images/Cute Touch-logos_black.png" alt="logo" width="5%">
+                </a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <!-- Setting the links to #! will ensure that no action takes place on click. -->
+                    <li><a href="index.html">Home</a></li>
+                  <!--   <li><a href="#!">About</a></li>-->
+                    <li><a href="#!">Services</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="saloon-service.html">Saloon Service</a></li>
+                            <li><a href="br.html">Bridal Packages</a></li>
+                            <li><a href="cls.html">Professional courses</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ach.html">Achievements</a></li>
+                  <!---  <li><a href="#!" onclick="scrollToContact()">Contact</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="certificate-section">
+        <div class="certificate-heading">My Achievements</div>
+
+        <div class="certificate-container">
+            <div class="certificate">
+                <img src="certificate1.jpg" alt="Certificate 1">
+                <p>Certificate Title 1</p>
+            </div>
+
+            <div class="certificate">
+                <img src="certificate2.jpg" alt="Certificate 2">
+                <p>Certificate Title 2</p>
+            </div>
+
+            <!-- Add more certificates as needed -->
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

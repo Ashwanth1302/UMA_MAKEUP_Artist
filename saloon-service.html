@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cs/styles.css"> 
+    <link rel="stylesheet" href="cs/saloon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="#!">
+                        <img src="images/Cute Touch-logos_black.png" alt="logo" width="5%">
+                    </a>
+                </div>
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!"><span></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <!-- Setting the links to #! will ensure that no action takes place on click. -->
+                        <li><a href="index.html">Home</a></li>
+                    <!----  <li><a href="#!">About</a></li>-->
+                        <li><a href="#!">Services</a>
+                            <ul class="nav-dropdown">
+                                <li><a href="saloon-service.html">Saloon Service</a></li>
+                                <li><a href="br.html">Bridal Packages</a></li>
+                                <li><a href="cls.html">Professional courses</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ach.html">Achievements</a></li>
+                        <li><a href="#!" onclick="scrollToContact()">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+<div class="js">
+  <h2> Cutetouch Makeover</h2>
+ </div>
+    <h3 class="w">Our Services</h3>
+     <section class="services2">
+      <div class="service-card2">
+          <img src="images/60-Minute Facial.jpeg" alt="Skincare and Facial">
+          <h3>Skincare and Facial</h3>
+           <a href="#!">Learn More</a>
+      </div>
+  
+      <div class="service-card2">
+          <img src="images/SalonPro Infrared Hair Color Processors, Dryers, Salon Styling Tools.jpeg" alt="Haircare">
+          <h3>Haircare</h3>
+           <a href="#!">Learn More</a>
+      </div>
+  
+      <div class="service-card2">
+          <img src="images/wax.jpg  " alt="Waxing">
+          <h3>Waxing</h3>
+           <a href="#!">Learn More</a>
+      </div>
+ 
+    </section>
+    <div class="i">
+        <p>For Enquiry</p>
+     
+    </div>
+    
+   <br>
+    <div class="bk">
+        
+    <a class="btn btn-primary" href="your-appointment-page.html">Contact us</a>
+  </div>
+
+  <section class="reviews">
+    <h3 class="gle">
+    REVIEWS
+    </h3>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-f2e09e01-eb32-4573-bdae-b0465f173d20"></div></section>
+  
+  </section>
+  <footer class="wq" id="contact">
+ 
+    <h1>Contact Us</h1>
+
+
+<div class="business-card">
+    <div class="left-section">
+        <div class="business-name">CuteTouch Makeup Studio & Academy</div>
+        <div class="business-address">7, 4, 1st Main Rd, S. V. S Nagar, Valasaravakkam, <br> Chennai, Tamil Nadu-600087</div>
+        <div class="business-num">9962653726</div>
+        <div class="business-mail">ashwanthram14@gmail.com</div>
+    </div>
+    <div class="right-section">
+        <div class="opening-hours" id="opening-hours">
+            <!-- Opening hours will be dynamically updated here -->
+        </div>
+    </div>
+</div>
+
+       
+    </div>
+    <div class="social-icon">
+        <a href="https://www.facebook.com/yourfacebookpage" class="social-icon-fb">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/yourinstagrampage" class="social-icon-insta">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/youryoutubepage" class="social-icon-u">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div> 
+      <div class="copyrights">
+        <hr class="custom-hr" style="border: none; border-top: 2px solid #333;">
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+      </div> 
+ 
+  </footer>
+		
+		 
+  
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+      const currentDay = new Date().getDay();
+        const openingHours = [
+            "Sunday: 9:00 AM to 9:00 PM",
+            "Monday: 9:00 AM to 9:00 PM",
+            "Tuesday: Closed",
+            "Wednesday: 9:00 AM to 9:00 PM",
+            "Thursday: 9:00 AM to 9:00 PM",
+            "Friday: 9:00 AM to 9:00 PM",
+            "Saturday: 9:00 AM to 9:00 PM"
+        ];
+        document.getElementById("opening-hours").innerText = `Today's Opening Hours: ${openingHours[currentDay]}`;
+      </script>
+</body>
+</html>
